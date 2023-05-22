@@ -1,0 +1,183 @@
+@use "./styles/scss/abstracts/" as a;
+@use "./styles/scss/components/" as c;
+
+.section {
+  display: grid;
+  margin-top: 5rem;
+
+  .title {
+    text-align: center;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .btn {
+    @include c.btn-bg(rgb(31, 99, 122));
+    justify-self: center;
+    font-size: a.fs(small);
+    margin-top: 1rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+  width: 90vw;
+  margin-inline: auto;
+  max-width: a.px-rem(600);
+  padding: 1rem 0;
+}
+
+.link {
+  color: #555;
+
+  &.active {
+    color: red;
+  }
+}
+
+.products__title {
+  text-align: center;
+  margin-top: a.m(80);
+}
+
+.products-list {
+  display: grid;
+  width: 90vw;
+  max-width: a.px-rem(600);
+  margin-inline: auto;
+  row-gap: 1rem;
+  margin-top: 2rem;
+
+  .product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: a.br(medium);
+  }
+
+  .product-name {
+    text-transform: capitalize;
+  }
+
+  .more-info {
+    color: cadetblue;
+  }
+}
+
+.section-product {
+  margin-top: 4rem;
+}
+
+.product-info {
+  display: grid;
+  row-gap: 1rem;
+  width: 90vw;
+  max-width: a.px-rem(600);
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: #fff;
+  padding-bottom: a.p(base);
+  border-radius: a.br(medium);
+
+  .product-img {
+    width: a.px-rem(600);
+    height: a.px-rem(350);
+    object-fit: cover;
+    object-position: center;
+    border-top-right-radius: a.br(medium);
+    border-top-left-radius: a.br(medium);
+  }
+
+  .name {
+    text-transform: capitalize;
+  }
+}
+
+.section-product {
+  display: grid;
+  justify-items: center;
+
+  .btn {
+    @include c.btn-bg(cadetblue);
+    font-size: a.fs(small);
+  }
+}
+
+.login-section {
+  background: #fff;
+  width: 90vw;
+  max-width: a.px-rem(400);
+  margin-inline: auto;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  margin-top: 5rem;
+
+  .title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: a.fs(20);
+    letter-spacing: a.ls(base);
+    margin-bottom: 2rem;
+  }
+
+  .login-form {
+    display: grid;
+    row-gap: 1rem;
+  }
+
+  .form-control {
+    display: grid;
+  }
+
+  .label-name {
+    text-transform: capitalize;
+    font-size: a.fs(15);
+  }
+  .label-email {
+    text-transform: capitalize;
+    font-size: a.fs(15);
+  }
+
+  .input-name {
+    border: a.px-rem(1) solid rgba(#6b6a6a, 0.1);
+    background: rgba(cadetblue, 0.07);
+    padding: 0.3rem 0.5rem;
+    border-radius: a.br(medium);
+  }
+  .input-email {
+    border: a.px-rem(1) solid rgba(#6b6a6a, 0.1);
+    background: rgba(cadetblue, 0.07);
+    padding: 0.3rem 0.5rem;
+    border-radius: a.br(medium);
+  }
+
+  .btn-login {
+    @include c.btn-bg(blue);
+    padding: 0.5rem 0.5rem;
+    margin-top: 2rem;
+    font-size: a.fs(18);
+  }
+}
+
+.dashboard {
+  width: 90vw;
+  max-width: a.px-rem(600);
+  margin-inline: auto;
+  padding-block: 2rem;
+
+  .greeting {
+    color: #555;
+  }
+
+  .user-name {
+    color: blueviolet;
+    text-transform: capitalize;
+    font-size: a.fs(x-large);
+  }
+}

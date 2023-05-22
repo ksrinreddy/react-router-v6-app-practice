@@ -1,0 +1,235 @@
+body {
+  background: aliceblue;
+  color: #333333;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  background-repeat: no-repeat;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+.section {
+  display: grid;
+  margin-top: 5rem;
+}
+.section .title {
+  text-align: center;
+}
+.section .info {
+  text-align: center;
+}
+.section .btn {
+  border: none;
+  background: rgb(31, 99, 122);
+  color: #ffffff;
+  padding: 0.25rem 1rem;
+  border-radius: 0.1875rem;
+  text-transform: capitalize;
+  letter-spacing: 0.0625rem;
+  justify-self: center;
+  font-size: 0.83rem;
+  margin-top: 1rem;
+}
+.section .btn:hover {
+  background: #154251;
+  cursor: pointer;
+  transition: all, 300ms;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+  width: 90vw;
+  margin-inline: auto;
+  max-width: 37.5rem;
+  padding: 1rem 0;
+}
+
+.link {
+  color: #555;
+}
+.link.active {
+  color: red;
+}
+
+.products__title {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.products-list {
+  display: grid;
+  width: 90vw;
+  max-width: 37.5rem;
+  margin-inline: auto;
+  row-gap: 1rem;
+  margin-top: 2rem;
+}
+.products-list .product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+}
+.products-list .product-name {
+  text-transform: capitalize;
+}
+.products-list .more-info {
+  color: cadetblue;
+}
+
+.section-product {
+  margin-top: 4rem;
+}
+
+.product-info {
+  display: grid;
+  row-gap: 1rem;
+  width: 90vw;
+  max-width: 37.5rem;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: #fff;
+  padding-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+.product-info .product-img {
+  width: 37.5rem;
+  height: 21.875rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+.product-info .name {
+  text-transform: capitalize;
+}
+
+.section-product {
+  display: grid;
+  justify-items: center;
+}
+.section-product .btn {
+  border: none;
+  background: cadetblue;
+  color: #ffffff;
+  padding: 0.25rem 1rem;
+  border-radius: 0.1875rem;
+  text-transform: capitalize;
+  letter-spacing: 0.0625rem;
+  font-size: 0.83rem;
+}
+.section-product .btn:hover {
+  background: #4c7e80;
+  cursor: pointer;
+  transition: all, 300ms;
+}
+
+.login-section {
+  background: #fff;
+  width: 90vw;
+  max-width: 25rem;
+  margin-inline: auto;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  margin-top: 5rem;
+}
+.login-section .title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 2rem;
+}
+.login-section .login-form {
+  display: grid;
+  row-gap: 1rem;
+}
+.login-section .form-control {
+  display: grid;
+}
+.login-section .label-name {
+  text-transform: capitalize;
+  font-size: 0.9375rem;
+}
+.login-section .label-email {
+  text-transform: capitalize;
+  font-size: 0.9375rem;
+}
+.login-section .input-name {
+  border: 0.0625rem solid rgba(107, 106, 106, 0.1);
+  background: rgba(95, 158, 160, 0.07);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.25rem;
+}
+.login-section .input-email {
+  border: 0.0625rem solid rgba(107, 106, 106, 0.1);
+  background: rgba(95, 158, 160, 0.07);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.25rem;
+}
+.login-section .btn-login {
+  border: none;
+  background: blue;
+  color: #ffffff;
+  padding: 0.25rem 1rem;
+  border-radius: 0.1875rem;
+  text-transform: capitalize;
+  letter-spacing: 0.0625rem;
+  padding: 0.5rem 0.5rem;
+  margin-top: 2rem;
+  font-size: 1.125rem;
+}
+.login-section .btn-login:hover {
+  background: #0000cc;
+  cursor: pointer;
+  transition: all, 300ms;
+}
+
+.dashboard {
+  width: 90vw;
+  max-width: 37.5rem;
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+.dashboard .greeting {
+  color: #555;
+}
+.dashboard .user-name {
+  color: blueviolet;
+  text-transform: capitalize;
+  font-size: 2rem;
+}/*# sourceMappingURL=styles.css.map */
